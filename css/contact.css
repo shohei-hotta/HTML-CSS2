@@ -1,0 +1,19 @@
+.content tr {
+  height: 7rem;
+}
+.contact th {
+  width: 150px;
+}
+#submit_button {
+  color: white;
+  background-color: skyblue;
+  padding: 5px 10px;
+  border: none;
+  margin-bottom: 100px;
+}
+#submit_button:hover {
+  opacity: 0.6;
+}
+.input {
+  width: 480px;
+}
