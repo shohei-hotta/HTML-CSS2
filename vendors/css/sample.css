@@ -1,0 +1,101 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+}
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+}
+/* ここから */
+.container {
+  position: relative;
+  min-height: 100%;
+}
+header {
+  background-color: #333;/*ヘッダーの背景色*/
+}
+header ul {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+header ul a {
+  color: #fff;/*リンクの色変える*/
+  text-decoration: none;/*リンクの下線消す*/
+  padding: 20px;
+}
+header ul a:hover {
+  text-decoration: underline;/*カーソル合わせると下線出る*/
+}
+header li {
+  list-style: none;/*先頭の点消す*/
+}
+
+/*top_menuのfloat*/
+li.left {
+  float: left;
+}
+.top_menu_right {
+  float: right;
+}
+li.right {
+  float: left;
+}
+
+/*floatの解除*/
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ここまでがheader部分の実装 */
+.main-header img {
+/* main画像（白い「Achieve」の文字の画像）部分の実装 */
+  width: 350px;
+  padding-top: 160px;
+}
+.about {
+/* About Achieve部分の実装 */
+}
+/* ここから */
+.function {
+  background-color: #dcdcdc;
+  padding-top: 30px;
+  padding-bottom: 170px;
+}
+.function-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.function-image {
+  float: left;
+  padding: 0 50px;
+}
+.function:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ここまでがfunction部分の実装 */
+footer {
+/* footer部分の実装 */
+background-color: #00334d;
+width: 100%;
+position: absolute;
+bottom: 0;
+}
+footer p {
+  color: white;
+}
+p.kaishamei {
+  padding-top: 20px;
+}
+/* ここに書かれているcssの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構わない。課題要件を満たし、コードの品質が一定の水準にあると判定されればどのような実装でも合格になる。 */
